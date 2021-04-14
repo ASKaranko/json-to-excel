@@ -1,40 +1,4 @@
-const arrayOfJsonsFiles = ['json10', 'json135', 'json171', 'json220', 'json272', 
-'json398', 'json440', 'json484', 'json636', 'json73', 'json100', 'json136', 
-'json172', 'json221', 'json273', 'json399', 'json443', 'json485', 'json638', 
-'json731', 'json101', 'json137', 'json174', 'json223', 'json274', 'json40', 
-'json444', 'json486', 'json64', 'json74', 'json102', 'json14', 'json175', 
-'json224', 'json275', 'json400', 'json445', 'json489', 'json641', 'json77',
-'json103', 'json140', 'json179', 'json225', 'json277', 'json406', 'json446', 
-'json49', 'json642', 'json78', 'json106', 'json141', 'json18', 'json226', 
-'json280', 'json407', 'json447', 'json490', 'json643', 'json79', 'json108', 
-'json143', 'json181', 'json227', 'json281', 'json408', 'json449', 'json491', 
-'json645', 'json8', 'json109', 'json144', 'json182', 'json228', 'json283', 
-'json412', 'json45', 'json493', 'json651', 'json80', 'json11', 'json145', 
-'json186', 'json229', 'json294', 'json413', 'json452', 'json496', 'json654', 
-'json821', 'json112', 'json146', 'json187', 'json230', 'json296', 'json417', 
-'json453', 'json497', 'json656', 'json84', 'json113', 'json148', 'json188', 
-'json232', 'json297', 'json42', 'json457', 'json5', 'json657', 'json85',
-'json114', 'json149', 'json189', 'json233', 'json298', 'json422', 'json458', 
-'json501', 'json66', 'json86', 'json115', 'json15', 'json191', 'json235', 
-'json300', 'json423', 'json46', 'json502', 'json661', 'json88', 'json116', 
-'json152', 'json194', 'json236', 'json301', 'json424', 'json460', 'json51', 
-'json662', 'json89', 'json12', 'json153', 'json195', 'json237', 'json305', 
-'json425', 'json462', 'json52', 'json666', 'json90', 'json121', 'json154', 
-'json196', 'json239', 'json32', 'json426', 'json463', 'json522', 'json667', 
-'json91', 'json123', 'json156', 'json198', 'json242', 'json322', 'json427', 
-'json464', 'json523', 'json67', 'json92', 'json124', 'json157', 'json199', 
-'json243', 'json324', 'json429', 'json465', 'json525', 'json671', 'json93',
-'json125', 'json158', 'json20', 'json245', 'json325', 'json43', 'json466', 
-'json54', 'json674', 'json94', 'json127', 'json16', 'json204', 'json246', 
-'json326', 'json430', 'json47', 'json549', 'json68', 'json95', 'json128', 
-'json166', 'json206', 'json250', 'json33', 'json432', 'json471', 'json570', 
-'json69', 'json96', 'json13', 'json167', 'json21', 'json263', 'json35', 
-'json433', 'json474', 'json587', 'json7',  'json97', 'json131', 'json168', 
-'json212', 'json264', 'json37', 'json434', 'json475', 'json594', 'json70', 
-'json98', 'json132', 'json169', 'json214', 'json265', 'json383', 'json435', 
-'json476', 'json595', 'json71', 'json133', 'json17', 'json217', 'json270', 
-'json391', 'json436', 'json479', 'json6', 'json72', 'json134', 'json170', 
-'json219', 'json271', 'json396', 'json438', 'json48', 'json619', 'json729'];
+const arrayOfJsonsFiles = ["json10", "json100", "json101", "json102", "json103", "json104", "json105", "json106", "json107", "json108", "json109", "json11", "json110", "json112", "json113", "json114", "json115", "json116", "json117", "json118", "json119", "json12", "json120", "json121", "json122", "json123", "json124", "json125", "json126", "json127", "json128", "json129", "json13", "json130", "json131", "json132", "json133", "json134", "json135", "json136", "json137", "json138", "json139", "json14", "json140", "json141", "json142", "json143", "json144", "json145", "json146", "json147", "json148", "json149", "json15", "json150", "json151", "json152", "json153", "json154", "json155", "json156", "json157", "json158", "json159", "json16", "json160", "json166", "json167", "json168", "json169", "json17", "json170", "json171", "json172", "json174", "json175", "json176", "json177", "json178", "json179", "json18", "json180", "json181", "json182", "json183", "json184", "json185", "json186", "json187", "json188", "json189", "json19", "json190", "json191", "json193", "json194", "json195", "json196", "json198", "json199", "json20", "json204", "json206", "json207", "json208", "json21", "json210", "json211", "json212", "json213", "json214", "json215", "json216", "json217", "json218", "json219", "json22", "json220", "json221", "json222", "json223", "json224", "json225", "json226", "json227", "json228", "json229", "json23", "json230", "json231", "json232", "json233", "json234", "json235", "json236", "json237", "json238", "json239", "json24", "json240", "json241", "json242", "json243", "json244", "json245", "json246", "json250", "json260", "json262", "json263", "json264", "json265", "json269", "json270", "json271", "json272", "json273", "json274", "json275", "json276", "json277", "json278", "json279", "json280", "json281", "json282", "json283", "json294", "json295", "json296", "json297", "json298", "json3", "json30", "json300", "json301", "json302", "json303", "json304", "json305", "json31", "json32", "json320", "json321", "json322", "json323", "json324", "json325", "json326", "json33", "json34", "json35", "json36", "json37", "json376", "json377", "json378", "json379", "json38", "json380", "json381", "json382", "json383", "json384", "json387", "json388", "json39", "json390", "json391", "json393", "json394", "json396", "json397", "json398", "json399", "json4", "json40", "json400", "json401", "json403", "json404", "json405", "json406", "json407", "json408", "json409", "json412", "json413", "json414", "json416", "json417", "json42", "json420", "json422", "json423", "json424", "json425", "json426", "json427", "json428", "json429", "json43", "json430", "json432", "json433", "json434", "json435", "json436", "json437", "json438", "json439", "json44", "json440", "json443", "json444", "json445", "json446", "json447", "json449", "json45", "json450", "json451", "json452", "json453", "json457", "json458", "json459", "json46", "json460", "json462", "json463", "json464", "json465", "json466", "json467", "json469", "json47", "json471", "json473", "json474", "json475", "json476", "json477", "json478", "json479", "json48", "json480", "json483", "json484", "json485", "json486", "json487", "json488", "json489", "json49", "json490", "json491", "json493", "json494", "json495", "json496", "json497", "json498", "json499", "json5", "json50", "json500", "json501", "json502", "json503", "json504", "json505", "json506", "json507", "json51", "json52", "json522", "json523", "json525", "json526", "json527", "json53", "json54", "json549", "json55", "json553", "json568", "json570", "json572", "json574", "json576", "json577", "json578", "json579", "json580", "json581", "json583", "json584", "json587", "json594", "json595", "json6", "json603", "json619", "json636", "json637", "json638", "json639", "json64", "json640", "json641", "json642", "json643", "json645", "json646", "json647", "json649", "json65", "json651", "json654", "json656", "json657", "json66", "json661", "json662", "json666", "json667", "json67", "json671", "json672", "json674", "json675", "json679", "json68", "json683", "json685", "json69", "json7", "json70", "json71", "json72", "json722", "json729", "json73", "json731", "json732", "json734", "json735", "json736", "json738", "json739", "json74", "json745", "json75", "json755", "json756", "json757", "json758", "json76", "json761", "json764", "json768", "json769", "json77", "json770", "json774", "json78", "json79", "json8", "json80", "json81", "json82", "json821", "json822", "json83", "json84", "json85", "json86", "json87", "json88", "json89", "json9", "json90", "json91", "json92", "json93", "json94", "json95", "json96", "json97", "json98", "json988", "json99"];
 const initialObject = {
   name: '',
   clicks: 0,
@@ -64,7 +28,7 @@ const commonProperties = ['name', 'clicks', 'lp_clicks', 'lp_ctr_8053', 'lp_ctr'
 
 async function getDataFromJson(name) {
   try {
-    const response = await fetch(`./json_full/${name}.txt`);
+    const response = await fetch(`./json/${name}.txt`);
     const data = await response.json();
     return data;
   } catch (error) {
@@ -194,8 +158,11 @@ const RemoveOfSameElements = (fullArray, uniqueArray) => {
       }
     }
   }
-  fullArray.splice(450, 1);
-  fullArray.splice(2468, 1);
+  fullArray.splice(5114, 1);
+  fullArray.splice(2091, 1);
+  fullArray.splice(3413, 1);
+  fullArray.splice(2072, 1);
+  fullArray.splice(5021, 1);
   console.log(fullArray);
   // console.log(findUniqueName(fullArray));
   return fullArray;
@@ -211,4 +178,4 @@ const elementInArray = (el, arr) => {
   return result;
 };
 
-dataStructuring();
+dataStructuring()
